@@ -6,8 +6,6 @@ L.tileLayer(
   "https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.png",
   {
     maxZoom: 20,
-    attribution:
-      '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors',
   }
 ).addTo(map);
 
@@ -18,6 +16,7 @@ const icon = L.icon({
   iconSize: [58, 68],
   iconAnchor: [29, 68],
   popupAnchor: [170, 2],
+  Href: "orphanage.html",
 });
 
 // create popup overlay
