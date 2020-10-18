@@ -89,12 +89,13 @@
                     placeholder="Cole o link da foto aqui"
                     required
                   />
-                  <span
-                    ><img src="./public/images/close.svg" alt="Botão de fechar"
+                  <span onclick="deleteField(event)">
+                    <img src="./public/images/close.svg" alt="Botão de fechar"
                   /></span>
                 </div>
               </div>
-              <button type="button">
+
+              <button onclick="addPhotoField()" type="button">
                 <img
                   src="./public/images/add-file.svg"
                   alt="Adiciona nova image"
@@ -121,13 +122,26 @@
               <input
                 type="hidden"
                 id="open_on_weekends"
-                name="open_on_weekends "
+                name="open_on_weekends"
                 value="1"
                 required
               />
               <div class="button-select">
-                <button type="button" class="active">Sim</button>
-                <button type="button">Não</button>
+                <button
+                  data-value="1"
+                  onclick="toggleSelect(event)"
+                  type="button"
+                  class="active"
+                >
+                  Sim
+                </button>
+                <button
+                  data-value="2"
+                  onclick="toggleSelect(event)"
+                  type="button"
+                >
+                  Não
+                </button>
               </div>
 
               <button type="submit" class="primary-button">Confirma</button>
